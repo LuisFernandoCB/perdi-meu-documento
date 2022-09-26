@@ -5,12 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perdi meu Doc</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="idsclss.css">
+    <link rel="stylesheet" href="uni.css">
 </head>
 <body>
     <header>
         <div>
-            <p>Procurando um documento?</p> <div id="lupa"><div></div></div>
+            <p>Procurando um documento?</p>
+            <div id="arco">
+                <div>
+                    <div>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <nav>
             <ul>
@@ -27,8 +39,8 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Ache seu documento perdido</h1>
+        <section id="sec1">
+            <h1>Ache seu documento perdido.</h1>
             <h2>É fácil! Basta seguir os seguintes passos:</h2>
             <ul>
                 <li>Insira o seu nome</li>
@@ -37,12 +49,20 @@
                 <li>Insira as iniciais do documento</li>
             </ul>
         </section>
-        <section>
-
+        <section id="formsec">
+            <h1>Preencha</h1>
+            <form method="POST" action="/obg" name="contact" netlify>
+                <input class="campo" required placeholder="Seu nome completo" type="text" name="Nome">
+                <select name="estados" id="selestado"></select>
+                <select name="cidades" id="selecidade"></select>
+                <textarea class="campo adj" required placeholder="Mensagem" name="Mensagem" rows="6"></textarea>
+                <input id="btn" type="submit" value="Enviar Mensagem">
+        </form>
         </section>
     </main>
     <footer>
-
+        <h1>Créditos</h1>
+        <a href="https://www.flaticon.com/free-icons/user" title="user icons"><img src="images/favicon.ico" alt="user" width="50px"> User icons created by Freepik - Flaticon</a>
     </footer>
 </body>
 </html>
